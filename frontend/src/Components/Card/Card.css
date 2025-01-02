@@ -1,0 +1,68 @@
+.card-contain {
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #88e23b, #6b7132);
+    width: min-content;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(1, 0, 8, 0.808);
+}
+
+.card-close {
+    margin-bottom: 1rem;
+    margin-left: 17.3rem;
+    align-content: flex-end;
+    color: #ef3434;
+    font-weight: 600;
+    border: 1px solid #ef3434;
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s linear, transform 0.3s ease-in-out;   
+}
+
+.card-close:hover {
+    background-color: #ebe480;
+    transform: scale(1.1);
+}
+
+.card-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px 0px rgba(1, 0, 8, 0.808); 
+}
+
+.card-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #6b71324d;   
+    height: 70px;
+    border-radius: inherit;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #a6cccc;
+    font-size: 25px;
+    color: #043c6e;
+    text-shadow: 2px 2px 10px #ebe480;
+}
+
+.specie-gender {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 2px 5px;
+    color: #ebe480;
+}
