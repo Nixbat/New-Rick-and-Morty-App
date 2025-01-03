@@ -3,6 +3,7 @@ import "./Cards.css"
 import Card from '../Card/Card'
 
 const Cards = ({ characters, onClose }) => {
+
   return (
     <div className='cards-container'>
       {
@@ -10,6 +11,7 @@ const Cards = ({ characters, onClose }) => {
           return (
             <div key={index}>
               <Card
+                id={character.id}
                 name={character.name}
                 species={character.species}
                 gender={character.gender}
@@ -25,3 +27,6 @@ const Cards = ({ characters, onClose }) => {
 };
 
 export default Cards;
+
+
+

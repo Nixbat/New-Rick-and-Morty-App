@@ -3,9 +3,10 @@ import "./Card.css"
 import { Link } from 'react-router-dom';
 
 const Card = ({ id, name, image, species, gender, onClose }) => {
+  
   return (
     <div className='card-contain'>
-        <button className='card-close' onClick={onClose}>X</button>      
+        <button className='card-close' onClick={onClose}>X</button>             
 
         <Link to={`/detail/${id}`}>
           <div className="detail">
