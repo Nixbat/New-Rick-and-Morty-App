@@ -86,15 +86,18 @@ const Home = () => {
         setSearchedCharacters(searchedCharacters.filter((character) => character.id !== id));
     };
 
-     
+
     return (
-        <div>           
+        <div className='container-home'>           
+          <div className="background"></div>
+          <div className="content">
+
             <SearchBar onSearch={onSearch} getRandomCharacter={getRandomCharacter} />
 
             {
                 searchedCharacters.length > 0 && (
                     <div>
-                        <h2>Searched Characters</h2>
+                        <h2 className='searched-chars'>Searched Characters</h2>
                         <Cards characters={searchedCharacters} onClose={onCloseSearched} />
                     </div>
                 )}
@@ -102,21 +105,9 @@ const Home = () => {
                 <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
                 <Cards characters={defaultCharacters} onClose={onCloseDefault} />
                 <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+          </div>
         </div>
     )   
 };
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
-

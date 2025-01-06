@@ -1,0 +1,31 @@
+.container-home {
+    width: 100vw;
+    height: 100%; 
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%; 
+    background-image: url("../../assets/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(90%); 
+    z-index: -1; 
+}
+
+.content {
+    position: relative; 
+    z-index: 1; 
+}
+
+.searched-chars {   
+    color: #a6cccc;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;     
+}

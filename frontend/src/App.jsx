@@ -1,3 +1,5 @@
+import React from "react";
+import "./App.css"
 import About from "./Components/About/About";
 import Detail from "./Components/Detail/Detail";
 import Favorites from "./Components/Favorites/Favorites";
@@ -10,8 +12,9 @@ function App() {
   const location = useLocation();
 
   return (
-    <div>
-      <div>{location.pathname !== "/" && <Navbar />}</div>
+    <div>      
+
+      <div>{!(location.pathname === "/" || location.pathname.startsWith("/detail")) && <Navbar />}</div>
 
       <Routes>
         <Route path="/" element={<Login />} />
@@ -25,5 +28,20 @@ function App() {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

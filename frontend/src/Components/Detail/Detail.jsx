@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Detail.css';
+import arrow from "../../assets/left-arrow.png";
 
 const Detail = () => {
     const { id } = useParams(); // Gets the id of the URL
     const [character, setCharacter] = useState({});
+    const navigate = useNavigate(); // Navigation hook
+
+    const handleGoHome = () => {
+        navigate('/home');
+    };
 
     
     useEffect(() => {
@@ -24,8 +30,8 @@ const Detail = () => {
     }, [id]); 
 
     return (
-        <main>
-          <div className="detail-container">
+        <main>           
+          <div className="detail-container">            
             <div className="card-container">
               {character.name ? (
                 <>
@@ -46,8 +52,13 @@ const Detail = () => {
             ) : (
                 <p>Loading character data...</p>
             )}
+
             </div>
-        </div>
+          </div>
+
+          <div className="back-btn">
+            <button onClick={handleGoHome} className='go-home-btn'><img src={arrow} alt="Arrow Icon" />Back to Home</button>
+          </div>
         </main>
     );
 };

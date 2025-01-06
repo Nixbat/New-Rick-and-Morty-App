@@ -10,17 +10,16 @@ const SearchBar = ({ onSearch, getRandomCharacter }) => {
   }
 
   return (
-    <div>
+    <div className='content-search'>
       <h1>More than 800 characters, find your favorite</h1>
-      <div>
+      <div className='search-form'>
         <input type="search" onChange={handleChange} placeholder='Search character...' />
         <button onClick={() => onSearch(id)}>Search</button>
       </div>
 
-      <div>
-      <button onClick={getRandomCharacter}>Random character</button>
-      </div>
-        
+      <div className='random-button'>
+      <button onClick={getRandomCharacter} className='btn-random'>Random character</button>
+      </div>          
     </div>
   )
 };

@@ -18,9 +18,7 @@ const Navbar = () => {
 
         <div className="nav-logout">
             <button>Logout</button>
-        </div>
-
-          {/* <a href="#" class="hbtn hb-fill-bottom hpill">Logout</a> */}
+        </div>          
     </div>
   )
 };

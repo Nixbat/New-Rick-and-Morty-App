@@ -1,8 +1,21 @@
+main {
+    position: absolute;          
+    width: 100vw;
+    height: 100%;
+    background-image: url("../../assets/background.png"); 
+    background-position: center;      
+    object-fit: cover;
+    background-repeat: no-repeat;   
+    filter: brightness(95%);
+    z-index: -1;   
+}
+
 .detail-container {
     display: flex;
     align-items: center;
     justify-content: center;       
-    margin: 2rem;  
+    margin: 1.5rem;    
+    margin-top: 3rem;     
 }
 
 .card-container {
@@ -10,11 +23,11 @@
     justify-content: center;
     align-items: center;   
     text-align: center; 
-    width: 900px;
-    height: 550px;
+    width: 85%;
+    height: 535px;
     border-radius: 20px;
-    background-color: #043c6e;
-    position: relative;
+    background: linear-gradient(20deg, #60a85f, #6b7132);
+    position: relative;    
     /* z-index: 1; */
 }
 
@@ -33,7 +46,7 @@
     border-radius: inherit;
     --angle: 0deg;
     background-image: conic-gradient(
-        from var(--angle), #043c6e, #88e23b, #043c6e
+        from var(--angle), #ebe480, #88e23b, #fff
     );
     animation: autoRotate 2s linear infinite;
     top: 50%;
@@ -56,19 +69,67 @@
 .content-image img {     
     margin-left: 30px;
     border-radius: 10px;
-    width: 380px;
-
+    width: 380px;  
 }
 
 .detail-info h1 {    
-    color: aliceblue;   
+    color: #043c6e;   
     font-size: 60px;   
     margin-left: 55px;
+    margin-right: 55px;
     padding-bottom: 80px;
     font-weight: 800;
+    text-shadow: 2px 1px 1px #a6cccc;
 }
 
-.detail-text {    
+.detail-text {       
     font-size: 25px;
-    text-align: center;
+    text-align: center;   
+    color: #ebe480;
+    text-shadow: 1px 1px 2px #043c6e;          
 }
+
+.detail-text p {
+    line-height: 1.5;    
+}
+
+.detail-text strong {
+    margin-right: 20px;
+    color: #88e23b;
+}
+
+.back-btn {
+    display: flex;    
+    justify-content: center;   
+    margin-top: 20px; 
+}
+
+.go-home-btn {  
+    display: flex;
+    align-items: center; 
+    background-color: transparent;
+    color: #a6cccc;       
+    border: 2px solid #a6cccc;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.go-home-btn:hover {
+    background-color: #60a85f; 
+    color: #ebe480;
+}
+
+.go-home-btn img {
+   margin-right: 10px;
+   width: 20px;
+   height: auto; 
+}
+
+
+
+
+

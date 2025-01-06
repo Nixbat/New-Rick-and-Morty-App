@@ -1,6 +1,6 @@
 .card-contain {
     margin-top: 1rem;
-    background: linear-gradient(135deg, #88e23b, #6b7132);
+    background: linear-gradient(180deg, #88e23b, #60a85f, #6b7132);
     width: min-content;
     padding: 1rem;
     border-radius: 10px;
@@ -48,7 +48,7 @@
     justify-content: center;
     text-align: center;
     background-color: #6b71324d;   
-    height: 70px;
+    height: 85px;
     border-radius: inherit;
     margin-top: 30px;
     margin-bottom: 15px;
