@@ -102,9 +102,11 @@ const Home = () => {
                     </div>
                 )}
 
-                <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
-                <Cards characters={defaultCharacters} onClose={onCloseDefault} />
-                <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+                <div className="pagination">
+                    <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+                    <Cards characters={defaultCharacters} onClose={onCloseDefault} />
+                    <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
+                </div>               
           </div>
         </div>
     )   

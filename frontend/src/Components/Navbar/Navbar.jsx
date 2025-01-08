@@ -1,9 +1,16 @@
 import React from 'react'
 import "./Navbar.css"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import img_portal from "../../assets/portal.gif"
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/');
+  }
+
   return (
     <div className='navbar-content'>
       <div className="nav-logo">
@@ -17,7 +24,7 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-logout">
-            <button>Logout</button>
+            <button onClick={handleLogout}>Logout</button>
         </div>          
     </div>
   )

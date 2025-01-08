@@ -12,9 +12,9 @@ function App() {
   const location = useLocation();
 
   return (
-    <div>      
-
-      <div>{!(location.pathname === "/" || location.pathname.startsWith("/detail")) && <Navbar />}</div>
+    <div>     
+      
+      <div>{!(location.pathname === "/" || location.pathname.startsWith("/detail") || location.pathname === "/about") && <Navbar />}</div>
 
       <Routes>
         <Route path="/" element={<Login />} />

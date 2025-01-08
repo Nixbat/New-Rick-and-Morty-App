@@ -109,7 +109,7 @@ main {
     align-items: center; 
     background-color: transparent;
     color: #a6cccc;       
-    border: 2px solid #a6cccc;
+    border: 1px solid #a6cccc;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -129,6 +129,37 @@ main {
    height: auto; 
 }
 
+.loader {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #a6cccc;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border-left: 4px solid #043c6e;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
 
 
 

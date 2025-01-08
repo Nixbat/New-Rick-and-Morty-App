@@ -27,7 +27,21 @@
 .nav-menu li a {
     text-decoration: none;
     color: #a6cccc; 
-    text-shadow: 1px 1px 1px #6b7132;
+    text-shadow: 1px 1px 2px #043c6e;
+    transition: 1s;
+}
+
+.nav-menu:hover li a {
+    transform: scale(1);
+    opacity: 0.2;
+    filter: blur(3px);
+}
+
+.nav-menu li a:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0);
+    color: #88e23b;
 }
 
 .nav-logout button {    

@@ -7,3 +7,296 @@
     background-repeat: no-repeat;   
     filter: brightness(95%);     
 }
+
+.about-contain {      
+    padding-top: 8rem;   
+}
+
+.description {
+    margin-left: 8rem;
+}
+
+.description h3 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #a6cccc;
+    text-shadow: 12px 12px 15px #043c6e;     
+}
+
+.hand-img {
+    width: 80px;
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #a6cccc;
+    text-shadow: 2px 1px 2px #88e23b;
+}
+
+.description span {
+    color: #ebe480;
+    font-weight: 900;
+}
+
+.description p {
+    font-size: larger;   
+    font-weight: 200;
+    color: #a6cccc;
+    margin: 32px 0px 32px 0px;
+    text-shadow: 2px 1px 2px #043c6e;
+}
+
+.social-icon img {
+    width: 30px;
+    margin-left: 8rem;
+    transition: 1s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px #a6cccc;
+}
+
+.btn-back {
+    display: flex;    
+    justify-content: center;   
+    margin-top: 30px; 
+}
+
+.home-btn {  
+    display: flex;
+    align-items: center; 
+    background-color: transparent;
+    color: #a6cccc;       
+    border: 1px solid #a6cccc;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.home-btn:hover {
+    background-color: #a6cccc; 
+    color: #043c6e;
+}
+
+.home-btn img {
+    margin-right: 10px;
+    width: 30px;
+    height: auto; 
+}
+
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 1;
+    }
+}
+
+
+/* Animation */
+.description  {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.description {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social-icon  {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.social-icon {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-back  {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: calc(0.5s * var(--i));
+}
+
+.btn-back {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+    .description {
+        margin-left: 7rem;
+    }
+
+    .description h3 {
+        font-size: 3rem;
+    }
+
+    .description h2 {
+        font-size: 2rem;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+    }
+
+    .social-icon img {
+        margin-left: 7rem;
+    }
+
+    .rocket {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-contain {
+        padding-top: 7rem;
+    }
+
+    .description {
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    .description h3 {
+        font-size: 2.5rem;
+    }
+
+    .description h2 {
+        font-size: 1.8rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .social-icon img {
+        margin-left: 2rem;
+    }
+
+    .btn-back {
+        margin-top: 20px;
+    }
+
+    .home-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .rocket {
+        width: 150px;
+        right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-contain {
+        padding-top: 8rem;
+    }
+
+    .description {
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .description h3 {
+        font-size: 2rem;
+    }
+
+    .description h2 {
+        font-size: 1.6rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .social-icon img {
+        margin-left: 1rem;
+    }
+
+    .home-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .rocket {
+        width: 120px;
+        right: 15%;
+    }
+}
+
+
+
+
+

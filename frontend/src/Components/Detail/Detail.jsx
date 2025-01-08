@@ -50,7 +50,8 @@ const Detail = () => {
                     </div>
                 </>
             ) : (
-                <p>Loading character data...</p>
+                // <p>Loading character data...</p>
+                <span className='loader'></span>
             )}
 
             </div>
