@@ -1,0 +1,67 @@
+.fav-container {
+    position: relative;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #4e2aa3, #276c94, #781bc4);  
+  }  
+  
+  .background-fav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4e2aa3, #276c94, #781bc4);
+    z-index: -1; 
+  }  
+  
+  .filter {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    z-index: 1; 
+  }  
+ 
+  .favorites-list {
+    position: relative; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    z-index: 1; 
+  }  
+  
+  .no-fav {    
+    color: #ebe480;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 1px #043c6e;
+  }  
+  
+  .filter-by {
+    color: #ebe480;
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #043c6e;
+  }
+  
+  .select-opt {
+    width: 8rem;
+    height: 2rem;
+    padding: 0.rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #a6cccc;
+    color: #a6cccc;
+  }
+
+  .select-opt option {
+    background-color: #276c94; 
+    color: #a6cccc;      
+  }
+  

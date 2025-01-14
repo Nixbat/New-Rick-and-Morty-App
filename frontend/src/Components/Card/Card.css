@@ -7,10 +7,43 @@
     box-shadow: 5px 5px 5px 0px rgba(1, 0, 8, 0.808);
 }
 
-.card-close {
-    margin-bottom: 1rem;
-    margin-left: 17.3rem;
-    align-content: flex-end;
+.fav-close {
+    display: flex;
+    justify-content: space-between;   
+    margin: 10px 0px 15px 0px; 
+}
+
+.white-heart img {           
+    width: 1.5rem;              
+}
+
+.white-heart {       
+    background-color: transparent;             
+    border: none;    
+    cursor: pointer;
+    transition: 1s;
+}
+
+.white-heart:hover {
+    transform: scale(1.2);       
+}
+
+.red-heart img {
+    width: 1.5rem;    
+}
+
+.red-heart {
+    background-color: transparent;      
+    border: none;  
+    cursor: pointer; 
+    transition: 1s;
+}
+
+.red-heart:hover {
+    transform: scale(1.2);       
+}
+
+.card-close {          
     color: #ef3434;
     font-weight: 600;
     border: 1px solid #ef3434;
@@ -19,7 +52,7 @@
     height: 1.5rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s linear, transform 0.3s ease-in-out;   
+    transition: background-color 0.5s linear, transform 0.3s ease-in-out;   
 }
 
 .card-close:hover {    
@@ -31,7 +64,7 @@
     width: 250px;
     height: 250px;
     object-fit: cover;
-    margin-left: 25px;
+   margin: 1rem;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
