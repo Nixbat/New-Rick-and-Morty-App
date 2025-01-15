@@ -77,3 +77,37 @@
     transform: scale(1.05);
 }
 
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .content-search h1 {
+        font-size: 24px;
+        padding: 30px 0px 20px 0px;
+    }
+
+    .search-form {
+        width: 50%;
+        height: 45px;
+        margin: 30px auto;
+    }
+    
+    .search-form input {
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .search-form button {
+        padding: 0px 25px;
+        font-size: 16px;
+    }
+
+    .random-button {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .btn-random {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

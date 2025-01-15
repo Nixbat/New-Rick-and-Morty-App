@@ -5,3 +5,11 @@
     gap: 1.5rem;
     padding: 2rem;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards-container {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

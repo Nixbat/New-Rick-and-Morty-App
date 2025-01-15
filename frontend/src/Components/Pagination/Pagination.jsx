@@ -4,7 +4,6 @@ import arrow_next from "../../assets/next.png";
 import arrow_previous from "../../assets/previous.png";
 
 
-
 const Pagination = ({ prev, next, onPrevious, onNext }) => {
 
     const handlePrevious = () => {

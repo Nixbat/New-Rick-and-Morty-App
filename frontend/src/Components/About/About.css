@@ -180,12 +180,6 @@
 }
 
 
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 1200px) {
     .description {
@@ -211,6 +205,14 @@
 
     .rocket {
         width: 200px;
+    }
+
+    .home-btn {                 
+        font-size: 16px;        
+    }
+
+    .home-btn img {        
+        width: 20px;        
     }
 }
 
@@ -239,6 +241,7 @@
     }
 
     .social-icon img {
+        width: 25px;
         margin-left: 2rem;
     }
 
@@ -282,7 +285,7 @@
     }
 
     .social-icon img {
-        margin-left: 1rem;
+        margin-left: 1rem;        
     }
 
     .home-btn {

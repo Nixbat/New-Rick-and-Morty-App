@@ -19,7 +19,7 @@ const Card = ({ id, name, image, species, gender, onClose }) => {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     favorites.push(character);
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    // 
+    
     alert("Added to favorites");   
   };
 

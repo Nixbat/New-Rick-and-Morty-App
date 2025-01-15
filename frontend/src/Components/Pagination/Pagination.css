@@ -55,5 +55,28 @@
     margin-left: 15px;    
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .contain-pages ul {               
+        gap: 10px;          
+    }
+
+    .contain-pages button {                     
+        width: 120px;
+        height: 25px;               
+        padding: 10px 20px;
+        font-size: 14px;        
+    }
+
+    .previous-btn img {
+        width: 20px;
+    }
+
+    .next-btn img {
+        width: 20px;
+    }
+}
+
+
 
 

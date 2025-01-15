@@ -64,4 +64,19 @@
     background-color: #276c94; 
     color: #a6cccc;      
   }
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .filter-by {
+      font-size: 1.3rem;
+    }
+
+    .select-opt {
+      width: 7rem;
+      height: 1.7rem;
+      font-size: 0.9rem;
+    }
+  }
+ 
   

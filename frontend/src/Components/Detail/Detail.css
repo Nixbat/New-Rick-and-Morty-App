@@ -162,5 +162,124 @@ main {
   } 
 
 
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .card-container {              
+        width: 75%;
+        height: 500px;         
+    }
+
+    .content-image img {              
+        width: 300px;
+    }
+
+    .detail-info h1 {          
+        font-size: 50px;         
+        padding-bottom: 60px;       
+    }
+
+    .detail-text {
+        font-size: 22px;         
+    }
+
+    .detail-text p {
+        line-height: 1.2;
+    }
+
+    .back-btn {           
+        margin-top: 40px;
+    }
+
+    .go-home-btn {        
+        padding: 8px 16px;
+        font-size: 18px;       
+        margin-top: 18px;        
+    }
+
+    .go-home-btn img {
+        width: 15px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .card-container {              
+        width: 80%;
+        height: 480px;    
+        margin-top: 25px;     
+    }
+
+    .content-image img {              
+        width: 250px;
+    }
+
+    .detail-info h1 {          
+        font-size: 38px;         
+        padding-bottom: 45px;       
+    }
+
+    .detail-text {
+        font-size: 16px;         
+    }
+
+    .detail-text p {
+        line-height: 1.1;
+    }
+
+    .back-btn {           
+        margin-top: 30px;
+    }
+
+    .go-home-btn {        
+        padding: 6px 12px;
+        font-size: 16px;       
+        margin-top: 16px;        
+    }
+
+    .go-home-btn img {
+        width: 13px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card-container {              
+        width: 70%;
+        height: 400px;  
+        margin-top: 70px;       
+    }
+
+    .content-image img {              
+        width: 200px;
+    }
+
+    .detail-info h1 {          
+        font-size: 30px;         
+        padding-bottom: 40px;       
+    }
+
+    .detail-text {
+        font-size: 16px;         
+    }
+
+    .detail-text p {
+        line-height: 1;
+    }
+
+    .back-btn {           
+        margin-top: 10px;       
+    }
+
+    .go-home-btn {        
+        padding: 4px 10px;
+        font-size: 14px;       
+        margin-top: 14px;             
+    }
+
+    .go-home-btn img {
+        width: 12px;
+    }
+  }
+  
+
+
 
 

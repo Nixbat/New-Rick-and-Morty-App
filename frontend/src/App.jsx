@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css"
 import About from "./Components/About/About";
 import Detail from "./Components/Detail/Detail";
@@ -9,7 +9,12 @@ import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // State to check if the user is authenticated
   const location = useLocation();
+
+  const handleLogin = (authenticated) => {
+    setIsAuthenticated(authenticated);
+  };
 
   return (
     <div>     
@@ -17,8 +22,8 @@ function App() {
       <div>{!(location.pathname === "/" || location.pathname.startsWith("/detail") || location.pathname === "/about") && <Navbar />}</div>
 
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route path="/home" element={isAuthenticated ? <Home /> : <Login onLogin={handleLogin} />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/about" element={<About />} />
